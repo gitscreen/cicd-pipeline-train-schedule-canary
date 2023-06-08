@@ -55,8 +55,7 @@ stage('CanaryDeploy') {
       )
   }
 }
-        
-        stage('DeployToProduction') {
+stage('DeployToProduction') {
             when {
                 branch 'master'
             }
@@ -78,5 +77,7 @@ stage('CanaryDeploy') {
                 )
             }
         }
-    }
+    }    
+        
+        
 
